@@ -1,4 +1,4 @@
-#inputs {
+.instrucciones-entrega {
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 30px ;
@@ -6,6 +6,18 @@
 
     background-image: url("../../assets/images/background1.svg");
     margin-top: 40px;
+    width: 100%;
+    height:fit-content;
+    max-width: 100vw;
+}
+
+.forma-pago {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 30px ;
+    padding-bottom: 30px; /* Adjust the value as needed */
+
+    background-image: url("../../assets/images/background2.svg");
     width: 100%;
     height:fit-content;
     max-width: 100vw;
