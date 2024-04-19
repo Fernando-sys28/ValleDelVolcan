@@ -26,3 +26,7 @@
 #success-card {
     margin: 0 auto; /* This will center the div horizontally */
 }
+
+#order-button {
+    margin-top: 2rem;
+}

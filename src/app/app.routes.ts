@@ -3,10 +3,12 @@ import { ProcesoPurificacionComponent} from './proceso-purificacion/proceso-puri
 import { DeliveryFormComponent } from './delivery-form/delivery-form.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
+import { ReviewOrderComponent } from './review-order/review-order.component'
 
 export const routes: Routes = [
   {path: 'delivery', component: DeliveryFormComponent },
   { path: 'proceso-purificacion', component: ProcesoPurificacionComponent },
   {path: 'contactanos', component: ContactPageComponent },
+  {path: 'delivery/summary', component: ReviewOrderComponent},
   {path: '', component: MainPageComponent},
 ];
