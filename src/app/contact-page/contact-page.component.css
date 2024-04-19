@@ -11,7 +11,7 @@
     left: 0;
     z-index: -1;
     width: 65%;
-    height: 65%;
+    height: 60%;
     background-color: #DFECFF;
     content: '';
     border-top-right-radius: 500px;
@@ -30,6 +30,7 @@
   }
   
   .contact-us .contact-us-content {
+    top: 100px;
     border-radius: 25px;
     padding: 80px;
     background-color: #A0C8FF;
@@ -145,6 +146,6 @@
   }
   
   
-  .contact-us-content .map-contact{
-        padding-top: 200px;
+ .map-contact{
+        padding-top: 180px;
   }
