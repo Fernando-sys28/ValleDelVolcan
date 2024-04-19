@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
+
 body {
   overflow-x: hidden;
   position: relative; }
@@ -417,16 +418,44 @@ a {
     align-items: center;
     position: relative; /* Asegura que la posición se base en el contenedor padre */
     top: 60px; /* Ajusta manualmente la posición en el eje Y */
+    font-size: 1.5em; /* Tamaño de fuente más grande */
    }
 
+   .footer-squares#text3T {
+    align-items: center;
+    text-align: center;
+    position: relative; /* Asegura que la posición se base en el contenedor padre */
+    top: 60px; /* Ajusta manualmente la posición en el eje Y */
+    font-size: 2.2em; /* Tamaño de fuente más grande */
+   }
+
+   .footer-squares#text5 {
+    align-items: center;
+    position: relative; /* Asegura que la posición se base en el contenedor padre */
+    bottom: 100px; /* Ajusta manualmente la posición en el eje Y */
+    font-size: 1.5em; /* Tamaño de fuente más grande */
+  }
+
+  
+
+  .footer-squares#text5T {
+    align-items: center;
+    text-align: center;
+   position: relative; /* Asegura que la posición se base en el contenedor padre */
+   bottom: 100px; /* Ajusta manualmente la posición en el eje Y */
+    font-size: 2.2em; /* Tamaño de fuente más grande */
+  }
    #text4{
     position: absolute;
-    bottom: -10%;
+    bottom: -30%;
     right: 14%;
   
    }
+
+   
 #text4-1{
-  margin-right: 39%;
+  
+  margin-right: 30%;
 }
 
   .footer-square {
@@ -436,6 +465,8 @@ a {
     border-radius: 10px;
     padding: 25px;
     text-align: center;
+    position: relative;
+    
   }
 
   .footer-square#square1 {
@@ -445,6 +476,7 @@ a {
     border-radius: 10px;
     padding: 25px;
     text-align: center;
+    font-weight: bold; /* Texto en negritas */
     position: relative; /* Asegura que la posición se base en el contenedor padre */
     bottom: 165px; /* Ajusta manualmente la posición en el eje Y */
 }
@@ -456,6 +488,7 @@ a {
   border-radius: 10px;
   padding: 25px;
   text-align: center;
+  padding: 25px;
   position: relative; /* Asegura que la posición se base en el contenedor padre */
   top: 45px; /* Ajusta manualmente la posición en el eje Y */
 }
@@ -475,6 +508,13 @@ a {
     margin-top: 8%;
     margin-bottom: 20%;
   }
+
+  
+.bsection-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas con ancho igual */
+  gap: 20px; /* Espacio entre las columnas */
+}
 
   .body-section .bsection-333{
     width: 100%; /* Ancho completo */
@@ -501,8 +541,16 @@ a {
 
   /* Estilos para el título centrado con padding de altura */
   .title-section {
-    padding: 90px; /* Padding de altura */
+    padding: 30px; /* Padding de altura */
     text-align: center; /* Centra el texto horizontalmente */
+    margin-bottom: 30px; /* Margen inferior */
+  }
+  
+  .title-section h1 {
+    font-size: 60px; /* Tamaño de fuente grande para el título */
+    font-weight: bold; /* Texto en negritas */
+    color: #333333; /* Color del texto */
+    margin-bottom: 20px; /* Margen inferior para el título */
   }
 
   /* Estilos para el footer */

@@ -64,7 +64,7 @@ a {
     .hero .hero-img-wrap img {
       position: relative;
       z-index: 2;
-      max-width: 480px;
+      max-width: 580px;
       left: -50px; }
       @media (min-width: 768px) {
         .hero .hero-img-wrap img {
@@ -80,23 +80,9 @@ a {
         .hero .hero-img-wrap img {
           left: 0px;
           top: -100px;
-          left: 300px; } }
-    .hero .hero-img-wrap:after {
-      content: "";
-      position: absolute;
-      max-width: 800px;
-      max-height: 500px;
-      background-image: url("../../assets/images/dots-light.svg");
-      background-size: contain;
-      background-repeat: no-repeat;
-      right: -100px;
-      bottom: 80px; }
-      @media (min-width: 1200px) {
-        .hero .hero-img-wrap:after {
-          width: 1000px;
-          height: 500px;
-          left: 230px; 
-          top: -70px; } }
+          left: 200px; }
+         }
+    
 
 .btn {
   font-weight: 600;
@@ -204,6 +190,7 @@ a {
   .map-section .img-wrap img {
     max-width: 550px; /* Puede ajustar esto para cambiar el tamaño de la imagen */
     height: auto; /* Mantiene la relación de aspecto */
+    border-radius: 2%;
   }
   
   .map-section .texto-map {
@@ -336,5 +323,77 @@ a {
     flex: 0 0 120px;
     position: relative; }
 
+    .process-wrapper {
+      padding: 80px 0;
+    }
+    .number-circle {
+      display: inline-block;
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      border-radius: 10%;
+      width: 80px;
+      height: 80px;
+      text-align: center;
+      font-size: 40px;
+      line-height: 80px;
+      margin-bottom: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    
+    .step {
+      position: relative; 
+      
+    }
+    
+    .step:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 3cqb; /* Ajustado para centrar con el círculo. Cambiar según sea necesario. */
+      right: -160px; /* Ajustado para unir los pasos correctamente */
+      width: 380px; /* Ajustado para extender la línea entre los pasos */
+      height: 68px;
+      background-image: url("../../assets/images/linea.svg"); /* Asegúrate de que la ruta es correcta */
+ 
+    }
+    
+    @media (max-width: 991px) {
+      .step:not(:last-child)::after {
+        width: calc(100% + 20px); /* Ajustado para pantallas más pequeñas */
+        right: -10px; /* Ajustado para pantallas más pequeñas */
+      }
+    }
 
+.product-section .card{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #A0C8FF;
+  border: #A0C8FF;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
 
+.product-section .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+}
+.card-body p {
+  margin-bottom: 15px; /* Añade más espacio debajo de cada párrafo */
+  line-height: 1.6; /* Aumenta el espacio entre líneas de texto */
+}
+
+.product-section .card .img-fluid{
+  display: block; /* Hace que la imagen sea un elemento de bloque */
+  margin: auto;
+  width: 150px;
+  padding: 10px;
+}
+.product-section .card .btn {
+  margin-top: auto;
+  padding: 10px;
+}
+.product-section .card .lead{
+  font-weight: bold;
+  padding: 20px;
+}
