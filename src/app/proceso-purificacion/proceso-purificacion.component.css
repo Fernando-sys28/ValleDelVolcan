@@ -195,8 +195,8 @@ a {
     border-color: #000;
    }
     .btn.btn-white-outline:hover {
-      border-color: white;
-      color: #ffffff; }
+      border-color: #1B69C5;
+      color: #1B69C5; }
 
 
 .we-help-section {
@@ -401,43 +401,108 @@ a {
       /* Estilos para los cuadrados */
   .footer-squares {
     /*position: absolute;*/
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
+
+
+  .footer-squares#text1 {
+   align-items: center;
+   position: relative; /* Asegura que la posición se base en el contenedor padre */
+   bottom: 160px; /* Ajusta manualmente la posición en el eje Y */
+  }
+
+  .footer-squares#text3 {
+    align-items: center;
+    position: relative; /* Asegura que la posición se base en el contenedor padre */
+    top: 60px; /* Ajusta manualmente la posición en el eje Y */
+   }
+
+   #text4{
+    position: absolute;
+    bottom: -10%;
+    right: 14%;
+  
+   }
+#text4-1{
+  margin-right: 39%;
+}
 
   .footer-square {
     width: 100px; /* Ancho definido para los cuadrados */
     height: 100px; /* Alto definido para los cuadrados */
     background-color: #A0C8FF; /* Color de relleno de los cuadrados */
     border-radius: 10px;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
-    
   }
+
+  .footer-square#square1 {
+    width: 100px; /* Ancho definido para los cuadrados */
+    height: 100px; /* Alto definido para los cuadrados */
+    background-color: #A0C8FF; /* Color de relleno de los cuadrados */
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    position: relative; /* Asegura que la posición se base en el contenedor padre */
+    bottom: 165px; /* Ajusta manualmente la posición en el eje Y */
+}
+
+.footer-square#square3 {
+  width: 100px; /* Ancho definido para los cuadrados */
+  height: 100px; /* Alto definido para los cuadrados */
+  background-color: #A0C8FF; /* Color de relleno de los cuadrados */
+  border-radius: 10px;
+  padding: 25px;
+  text-align: center;
+  position: relative; /* Asegura que la posición se base en el contenedor padre */
+  top: 45px; /* Ajusta manualmente la posición en el eje Y */
+}
+
 
 /* Estilos para el footer */
 .body-section{
     background-image: url('../../assets/images/tuberia.svg');
-    background-size: cover; /* Ancho y alto específicos para la imagen de fondo */
+    background-size: contain; /* Ancho y alto específicos para la imagen de fondo */
     background-repeat: no-repeat;
+    background-position: center; /* Posiciona la imagen centrada */
     background-attachment: scroll;
     padding: 50px 0; /* Puedes ajustar el padding según necesites */
     position: relative;
+    height: 1000px;
     z-index: 1;
-    
+    margin-top: 8%;
+    margin-bottom: 20%;
   }
 
-  .body-section .bsection{
+  .body-section .bsection-333{
     width: 100%; /* Ancho completo */
+    height: 333px;
     text-align: center;
-    padding: 20px;
+    padding: 50px;
     box-sizing: border-box;
     border-bottom: 1px solid #ddd; /* Línea divisoria entre las secciones */
+  }
+
+  .body-section .bsection-433{
+    width: 100%; /* Ancho completo */
+    height: 433px;
+    text-align: center;
+    padding: 50px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd; /* Línea divisoria entre las secciones */
+    display: block;
+  }
+
+  .body-section .bsection-433 a{
+    margin-top: 10%;
+  }
+
+  /* Estilos para el título centrado con padding de altura */
+  .title-section {
+    padding: 90px; /* Padding de altura */
+    text-align: center; /* Centra el texto horizontalmente */
   }
 
   /* Estilos para el footer */
