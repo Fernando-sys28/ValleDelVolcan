@@ -19,10 +19,39 @@
             </ul>
 
             <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+                <li><a class="nav-link" data-bs-toggle="modal" data-bs-target="#cartModal" ><img src="assets/images/cart.svg">
+                    Carrito ({{ cartItemsCount }})
+                  </a>
+              </li>
                 <li><a class="nav-link" routerLink="/cuenta"><img src="assets/images/user.svg"></a></li>
-                <li><a class="nav-link" href="cart.html"><img src="assets/images/cart.svg"></a></li>
+                
             </ul>
+            <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="cartModalLabel">Carrito de Compras</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item" *ngFor="let product of cartItems">
+                            {{ product.name }} - ${{ product.price }}
+                            <!-- Aquí puedes añadir un botón para eliminar del carrito si lo deseas -->
+                          </li>
+                        </ul>
+                      </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <a routerLink="/delivery" class="btn btn-primary" data-bs-dismiss="modal">Pagar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
         </div>
+
+
     </div>
 
 </nav>

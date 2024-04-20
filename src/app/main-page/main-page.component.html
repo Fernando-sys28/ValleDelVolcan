@@ -83,7 +83,7 @@
     <!-- Start Product Section -->
     <div class="product-section">
         <div class="container">
-            <h2 class="mb-4 section-title text-center">Precio de los Productos </h2>
+            <h1 class="mb-4 section-title text-center">Precio de los Productos </h1>
             <p class="text-center"> Contamos con servicio de facturacion.</p>
             <p class="text-center"> Sujeto a zona de reparticion</p>
             <p class="text-center"> Pregunta por nuestros convenios de volumen</p>
@@ -131,7 +131,7 @@
                             </div>
 
                             <p class="card-text"><span>Estos precios incluyen envase y liquido</span></p>
-                            <a href="#!" class="btn">Comprar</a>
+                            <a class="btn" (click)="addToCart({ id: 1, name: 'Producto 1', price: 75 })">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -156,7 +156,7 @@
                                 </label>
                             </div>
                             <p>c/u.(rejilla de 24 botellas) </p>
-                            <a href="#!" class="btn">Comprar</a>
+                            <a class="btn"  (click)="addToCart({ id: 2, name: 'Producto 2', price: 9 })">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -186,7 +186,7 @@
 
                             <p style="margin-bottom: 20px;">c/u.(rejilla de 24 botellas) </p>
 
-                            <a href="#!" class="btn">Comprar</a>
+                            <a class="btn"  (click)="addToCart({ id: 3, name: 'Producto 3', price: 11 })">Comprar</a>
                         </div>
                     </div>
 
@@ -214,7 +214,7 @@
                                 </label>
                             </div>
 
-                            <a href="#!" class="btn">Comprar</a>
+                            <a class="btn"  (click)="addToCart({ id: 4, name: 'Producto 4', price: 20 })">Comprar</a>
                         </div>
                     </div>
 
@@ -380,7 +380,7 @@
                         <img src="assets/images/local_image.jpg" alt="Image" class="img-fluid">
                     </div>
                     <div class="texto-map">
-                        <h1 class="section-map mb-4">¡Ven a Conocer Nuestra Sucursal!</h1>
+                        <h2 class="section-map mb-4">¡Ven a Conocer Nuestra Sucursal!</h2>
                         <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus
                             malesuada...</p>
                         <p><a routerLink="mapa" class="btn">Ver mapa</a></p>
