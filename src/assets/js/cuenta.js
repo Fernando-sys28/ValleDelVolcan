@@ -27,7 +27,7 @@ style.innerHTML = `
     font-family: "Inter", sans-serif;
     font-size: 12px;
     color: #fff;
-    background: radial-gradient(circle, #eeaeca 0%, #94bbe9 100%);
+    // background: radial-gradient(circle, #eeaeca 0%, #94bbe9 100%);
     padding: 40px 0;
   }
   

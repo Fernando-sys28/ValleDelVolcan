@@ -2,7 +2,9 @@
 
 body {
   overflow-x: hidden;
-  position: relative; }
+  position: relative; 
+  background-color: #DFECFF !important;
+}
   
 
 body {

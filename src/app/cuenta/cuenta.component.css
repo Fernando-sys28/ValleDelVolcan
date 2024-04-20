@@ -183,7 +183,7 @@
     border-radius: 50%;
     width: 8px;
     height: 8px;
-    background: linear-gradient(45deg, #51eb24 0%, #39df19 100%);
+    
   }
   
   .search {
@@ -231,7 +231,7 @@
   }
   .search .search-button {
     width: 50px;
-    background-color: #865e8c;
+    background-color: #DFECFF;
     color: #fff;
     font-size: 20px;
   }
