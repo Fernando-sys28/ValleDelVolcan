@@ -10,6 +10,7 @@ import { WalletComponent } from './wallet/wallet.component';
 
 import { CargarScriptsService } from './cargar-scripts.service';
 import { MapaComponent } from './mapa/mapa.component';
+import { StatusComponent } from './status/status.component';
 
 export const routes: Routes = [
   {path: 'delivery', component: DeliveryFormComponent },
@@ -22,4 +23,6 @@ export const routes: Routes = [
   {path: 'wallet', component: WalletComponent},
   {path: 'CargarScriptsService', component: CargarScriptsService},
   {path: 'mapa', component: MapaComponent},
+  {path: 'status', component: StatusComponent},
+
 ];

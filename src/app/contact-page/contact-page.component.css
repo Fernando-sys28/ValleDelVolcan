@@ -149,3 +149,19 @@
  .map-contact{
         padding-top: 180px;
   }
+
+.custom-social li {
+    margin: 2px;
+    display: inline-block; }
+.custom-social li a {
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      display: inline-block;
+      background: #fff;
+      color: #000000;
+      border-radius: 50%; }
+.custom-social li a:hover {
+        background: #000000;
+        color: #ffffff; }

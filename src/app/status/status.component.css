@@ -1,0 +1,77 @@
+.top-half{
+    padding: 2rem;
+    background-color: #DFECFF ;
+}
+
+#product-list {
+    margin-top: 3rem;
+}
+
+.edit-save-btn {
+    
+    background-color: #A0C8FF; /* Color de fondo azul */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 400px;
+    border-radius: 20px; /* Bordes redondeados */
+  }
+
+  .delete-btn {
+    
+    background-color: #A0C8FF; /* Color de fondo azul */
+    border: none;
+    color: red;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 400px;
+    border-radius: 20px; /* Bordes redondeados */
+  }
+  
+  
+  .edit-save-btn:hover {
+    color: #000;
+    background-color: #fff; /* Color de fondo más oscuro al pasar el mouse */
+  }
+  
+  input[type="text"] {
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.no-padding {
+    padding-right: 0 !important;
+}
+
+.no-margin {
+    margin-right: 0 !important;
+}
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+.container {
+    max-width: 100%; /* o el valor máximo que prefieras */
+}

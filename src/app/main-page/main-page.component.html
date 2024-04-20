@@ -10,8 +10,8 @@
                         <p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
                             vulputate velit imperdiet dolor tempor tristique.</p>
                         <p>
-                            <a routerLink="/delivery" class="btn btn-secondary me-2">Shop Now</a>
-                            <a href="#" class="btn btn-white-outline">Ver mas</a>
+                            <a routerLink="/" fragment="product-part-section" class="btn btn-secondary me-2">Shop Now</a>
+                            <a routerLink="/" fragment="product-part-section" class="btn btn-white-outline">Ver mas</a>
                         </p>
 
                     </div>
@@ -81,148 +81,151 @@
     </div>
     <!-- End We Help Section -->
     <!-- Start Product Section -->
-    <div class="product-section">
-        <div class="container">
-            <h1 class="mb-4 section-title text-center">Precio de los Productos </h1>
-            <p class="text-center"> Contamos con servicio de facturacion.</p>
-            <p class="text-center"> Sujeto a zona de reparticion</p>
-            <p class="text-center"> Pregunta por nuestros convenios de volumen</p>
-            <div class="row ">
-                <div class="col-lg-3">
-                    <div class="card h-100">
-                        <div class="card-body d-flex flex-column">
-                            <p class="lead"><strong>Envase Garrafones</strong></p>
-                            <div class="img-card justify-content-center">
-                                <img src="../../assets/images/garrafon-info.png" class="img-fluid"
-                                    style=" width: 130px;" />
+    <section id="product-part-section" class="product-part-section">
+        <div class="product-section">
+            <div class="container">
+                <h1 class="mb-4 section-title text-center">Precio de los Productos </h1>
+                <p class="text-center"> Contamos con servicio de facturacion.</p>
+                <p class="text-center"> Sujeto a zona de reparticion</p>
+                <p class="text-center"> Pregunta por nuestros convenios de volumen</p>
+                <div class="row ">
+                    <div class="col-lg-3">
+                        <div class="card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <p class="lead"><strong>Envase Garrafones</strong></p>
+                                <div class="img-card justify-content-center">
+                                    <img src="../../assets/images/garrafon-info.png" class="img-fluid"
+                                        style=" width: 130px;" />
+                                </div>
+    
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Valle del volcan 20 lt: $95 pesos
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">
+                                        Ciel 20 lt: $100 pesos
+                                    </label>
+                                </div>
+    
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                    <label class="form-check-label" for="defaultCheck3">
+                                        Bonafon 20 lt: $105 pesos
+                                    </label>
+                                </div>
+    
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                                    <label class="form-check-label" for="defaultCheck4">
+                                        Epura 20 lt: $125 pesos
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+                                    <label class="form-check-label" for="defaultCheck5">
+                                        Valle del volcan 11 lt: $75 pesos
+                                    </label>
+                                </div>
+    
+                                <p class="card-text"><span>Estos precios incluyen envase y liquido</span></p>
+                                <a class="btn" (click)="addToCart({ id: 1, name: 'Producto 1', price: 75 })">Comprar</a>
                             </div>
-
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                <label class="form-check-label" for="defaultCheck1">
-                                    Valle del volcan 20 lt: $95 pesos
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                                <label class="form-check-label" for="defaultCheck2">
-                                    Ciel 20 lt: $100 pesos
-                                </label>
-                            </div>
-
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
-                                <label class="form-check-label" for="defaultCheck3">
-                                    Bonafon 20 lt: $105 pesos
-                                </label>
-                            </div>
-
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
-                                <label class="form-check-label" for="defaultCheck4">
-                                    Epura 20 lt: $125 pesos
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
-                                <label class="form-check-label" for="defaultCheck5">
-                                    Valle del volcan 11 lt: $75 pesos
-                                </label>
-                            </div>
-
-                            <p class="card-text"><span>Estos precios incluyen envase y liquido</span></p>
-                            <a class="btn" (click)="addToCart({ id: 1, name: 'Producto 1', price: 75 })">Comprar</a>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-lg-3">
-                    <div class="card h-100">
-                        <div class="card-body d-flex flex-column">
-                            <p class="lead"><strong>Botella de Anillos</strong></p>
-                            <div class="jimg-card justify-content-center">
-                                <img src="../../assets/images/botella-anillo.png" class="img-fluid" />
+    
+                    <div class="col-lg-3">
+                        <div class="card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <p class="lead"><strong>Botella de Anillos</strong></p>
+                                <div class="jimg-card justify-content-center">
+                                    <img src="../../assets/images/botella-anillo.png" class="img-fluid" />
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+                                    <label class="form-check-label" for="defaultCheck6">
+                                        Botella de plastico anillada 1lt: $9.50
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck7">
+                                    <label class="form-check-label" for="defaultCheck7">
+                                        Botella de plastico anillada 500ml: $7.50
+                                    </label>
+                                </div>
+                                <p>c/u.(rejilla de 24 botellas) </p>
+                                <a class="btn"  (click)="addToCart({ id: 2, name: 'Producto 2', price: 9 })">Comprar</a>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
-                                <label class="form-check-label" for="defaultCheck6">
-                                    Botella de plastico anillada 1lt: $9.50
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck7">
-                                <label class="form-check-label" for="defaultCheck7">
-                                    Botella de plastico anillada 500ml: $7.50
-                                </label>
-                            </div>
-                            <p>c/u.(rejilla de 24 botellas) </p>
-                            <a class="btn"  (click)="addToCart({ id: 2, name: 'Producto 2', price: 9 })">Comprar</a>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="card h-100">
-                        <div class="card-body d-flex flex-column">
-                            <p class="lead"><strong>Botella Boston</strong></p>
-                            <div class="img-card justify-content-center">
-                                <img src="../../assets/images/botella-boston.png" class="img-fluid"
-                                    style=" width: 170px;" />
-
+                    <div class="col-lg-3">
+                        <div class="card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <p class="lead"><strong>Botella Boston</strong></p>
+                                <div class="img-card justify-content-center">
+                                    <img src="../../assets/images/botella-boston.png" class="img-fluid"
+                                        style=" width: 170px;" />
+    
+                                </div>
+                                <p>Botella de plastico Boston 1lt</p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck7">
+                                    <label class="form-check-label" for="defaultCheck7">
+                                        Etiqueada con vinil eco mate o brillante con marca: $13.50
+                                    </label>
+                                </div>
+                                <p>Botella de plastico Boston 500ml</p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck8">
+                                    <label class="form-check-label" for="defaultCheck8">
+                                        Etiqueada con vinil eco mate o brillante con marca: $11.00
+                                    </label>
+                                </div>
+    
+                                <p style="margin-bottom: 20px;">c/u.(rejilla de 24 botellas) </p>
+    
+                                <a class="btn"  (click)="addToCart({ id: 3, name: 'Producto 3', price: 11 })">Comprar</a>
                             </div>
-                            <p>Botella de plastico Boston 1lt</p>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck7">
-                                <label class="form-check-label" for="defaultCheck7">
-                                    Etiqueada con vinil eco mate o brillante con marca: $13.50
-                                </label>
-                            </div>
-                            <p>Botella de plastico Boston 500ml</p>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck8">
-                                <label class="form-check-label" for="defaultCheck8">
-                                    Etiqueada con vinil eco mate o brillante con marca: $11.00
-                                </label>
-                            </div>
-
-                            <p style="margin-bottom: 20px;">c/u.(rejilla de 24 botellas) </p>
-
-                            <a class="btn"  (click)="addToCart({ id: 3, name: 'Producto 3', price: 11 })">Comprar</a>
                         </div>
+    
                     </div>
-
-                </div>
-
-                <div class="col-lg-3">
-                    <div class="card h-100">
-                        <div class="card-body d-flex flex-column">
-                            <p class="lead"><strong>Precios Servicios</strong></p>
-                            <div class="img-card justify-content-center">
-                                <img src="../../assets/images/servicio-domicilio.png" class="img-fluid"
-                                    style=" width: 160px;" />
-
+    
+                    <div class="col-lg-3">
+                        <div class="card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <p class="lead"><strong>Precios Servicios</strong></p>
+                                <div class="img-card justify-content-center">
+                                    <img src="../../assets/images/servicio-domicilio.png" class="img-fluid"
+                                        style=" width: 160px;" />
+    
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck9">
+                                    <label class="form-check-label" for="defaultCheck9">
+                                        Precio Ventanilla $15
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck10">
+                                    <label class="form-check-label" for="defaultCheck10">
+                                        Precio Domicilio $20
+                                    </label>
+                                </div>
+    
+                                <a class="btn"  (click)="addToCart({ id: 4, name: 'Producto 4', price: 20 })">Comprar</a>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck9">
-                                <label class="form-check-label" for="defaultCheck9">
-                                    Precio Ventanilla $15
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck10">
-                                <label class="form-check-label" for="defaultCheck10">
-                                    Precio Domicilio $20
-                                </label>
-                            </div>
-
-                            <a class="btn"  (click)="addToCart({ id: 4, name: 'Producto 4', price: 20 })">Comprar</a>
                         </div>
+    
                     </div>
-
                 </div>
+    
             </div>
-
         </div>
-    </div>
+    </section>
+    
     <section id="who-part-section">
         <!-- End Product Section -->
         <div class="who-section">

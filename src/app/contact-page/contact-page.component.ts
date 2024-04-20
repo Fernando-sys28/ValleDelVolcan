@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './contact-page.component.css'
 })
 export class ContactPageComponent {
-
+  email = 'valleVolcan@hotmail';
 }

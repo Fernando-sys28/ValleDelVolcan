@@ -1,50 +1,55 @@
-
-
 <div class="top-half">
     <div class="container">
-        <h1 style="margin-top: 50px;">¡Pedido Realizado!</h1>
-        
-        <p style="color: rgba(0, 0, 0, 0.4);">Listo, tu pedido se ha registrado, en unos instantes indicaremos el estatus de tu pedido</p>
-        <img src="../../assets/images/pedido_realizado.svg" alt="" style="margin-bottom: 100px;">
-        <div class="row justify-content-star">
+       
+        <div class="row justify-content-start no-gutters" style="margin-top: 100px;">
+
             <div class="col-md-6">
-                <h2>Resumen de tu Pedido</h2>
+                <h2 style="margin-bottom: 40px;">Estatus del Pedido</h2>
         
-                <div class="row justify-content-star">
+                <div class="row justify-content-start">
                     <div class="col-4">
                         <label for="showName" class="form-label" style="font-weight: bold;">Nombre</label>
                     </div>
-                    <div class="col-4">
-                        <p>Fernando de Jesus Garcia Medina</p>
+                    <div class="col-7">
+                        <input type="text" class="form-control" value="Fernando de Jesus Garcia Medina">
                     </div>
                 </div>
             
-                <div class="row justify-content-star">
+                <div class="row justify-content-start">
                     <div class="col-4">
                         <label for="showDirection" class="form-label" style="font-weight: bold;">Dirección</label>
                     </div>
-                    <div class="col-4">
-                        <p>Sherman calle Wallaby 42, Sidney</p>
+                    <div class="col-7">
+                        <input type="text" class="form-control" value="Sherman calle Wallaby 42, Sidney">
                     </div>
                 </div>
             
-                <div class="row justify-content-star">
+                <div class="row justify-content-start">
                     <div class="col-4">
                         <label for="showHorario" class="form-label" style="font-weight: bold;">Horario de Entrega Entre Semana</label>
                     </div>
-                    <div class="col-4">
-                        <p>De 17:00 a 20:00</p>
+                    <div class="col-7">
+                        <input type="text" class="form-control" value="De 17:00 a 20:00">
+                        
                     </div>
                 </div>
             
-                <div class="row justify-content-star">
+                <div class="row justify-content-start">
                     <div class="col-4">
                         <label for="showComents" class="form-label" style="font-weight: bold;">Instrucciones Especiales</label>
                     </div>
-                    <div class="col-4">
-                        <p>Zaguán rojo, número 6, a lado de una tienda</p>
+                    <div class="col-7">
+                        <input type="text" class="form-control" value="Zaguán rojo, número 6, a lado de una tienda">
                     </div>
+                    
                 </div>
+
+                <div class="row justify-content-start">
+                    <button class="edit-save-btn" style="margin-top: 40px;">Editar/Guardar</button>
+                    <button class="delete-btn">Eliminar Pedido</button>
+
+                </div>
+
             </div>
             
             <div class="col-md-6" style="margin-bottom: 200px;">
