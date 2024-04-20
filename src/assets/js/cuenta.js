@@ -23,12 +23,17 @@ style.innerHTML = `
     list-style: none;
   }
   
+  html{
+    background-color: #DFECFF;
+  }
+
   body {
     font-family: "Inter", sans-serif;
-    font-size: 12px;
+    
     color: #fff;
     // background: radial-gradient(circle, #eeaeca 0%, #94bbe9 100%);
-    padding: 40px 0;
+    
+    background-color: #DFECFF;
   }
   
   .wrapper {
@@ -41,6 +46,7 @@ style.innerHTML = `
   .container {
     padding-left: 20px;
     padding-right: 20px;
+    
   }
   
   .phone {
@@ -119,7 +125,7 @@ style.innerHTML = `
   }
   
   header {
-    background: #1B69C5;
+    
     padding-bottom: 72px;
     background-image: url("https://i.ibb.co/jwLXqyd/clouds-min.png");
     background-repeat: no-repeat;
