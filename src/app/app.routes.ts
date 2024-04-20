@@ -9,6 +9,7 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { WalletComponent } from './wallet/wallet.component';
 
 import { CargarScriptsService } from './cargar-scripts.service';
+import { MapaComponent } from './mapa/mapa.component';
 
 export const routes: Routes = [
   {path: 'delivery', component: DeliveryFormComponent },
@@ -20,4 +21,5 @@ export const routes: Routes = [
   {path: 'perfil', component: PerfilComponent},
   {path: 'wallet', component: WalletComponent},
   {path: 'CargarScriptsService', component: CargarScriptsService},
+  {path: 'mapa', component: MapaComponent},
 ];
