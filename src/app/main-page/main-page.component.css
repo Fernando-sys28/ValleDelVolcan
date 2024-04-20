@@ -389,8 +389,8 @@ a {
 
 }
 .card-body p {
-  margin-bottom: 15px; /* Añade más espacio debajo de cada párrafo */
-  line-height: 1.6; /* Aumenta el espacio entre líneas de texto */
+  margin-bottom: 0px; /* Añade más espacio debajo de cada párrafo */
+  line-height: 2; /* Aumenta el espacio entre líneas de texto */
 }
 
 .product-section .card .img-fluid{
@@ -400,7 +400,9 @@ a {
   padding: 10px;
 }
 .product-section .card .btn {
-  margin-top: auto;
+
+  margin-top: auto ;
+  margin-bottom: 10px;
   padding: 10px;
 }
 .product-section .card .lead{
