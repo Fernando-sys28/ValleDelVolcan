@@ -136,6 +136,14 @@ a {
   padding: 0 3rem;
 }
 
+.who-section {
+  background-size: cover;
+  color: #000;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
 
 .we-help-section .col-lg-5 {
   max-width: 40%;
