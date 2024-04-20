@@ -13,11 +13,6 @@ import { FooterComponent } from "./footer/footer.component";
 })
 
 export class AppComponent {
-  title = 'app-pf-valle-volcan';
+  
 
-  constructor(private router: Router) { }
-
-  navigateToDeliveryForm() {
-    this.router.navigate(['/delivery-form']);
-  }
 }

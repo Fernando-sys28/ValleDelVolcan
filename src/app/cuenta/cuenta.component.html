@@ -1,101 +1,19 @@
-<!-- <!DOCTYPE html>
-<html lang="es">
-    <head>
-
-        <meta charset="UTF-8">
-        <title>CodePen Demo</title>
-      
-        <meta name="robots" content="noindex">
-      
-        <meta charset="utf-8">
-          <meta name="viwport" content="width=device-width, initial-scale=1.0">
-          <title>Coca Cola Website Landing Page</title>
-          
-          
-      </head>
-<body> -->
 
     <div class="wrapper">
         <div class="phone">
             
-            <!-- <header class="container">
-                <div class="top-bar">
-                    <div class="time">9:41</div>
-                    <div class="status-bar">
-                        <span class="icon icon-signal"></span>
-                        <span class="icon icon-wifi"></span>
-                        <span class="icon icon-battery"></span>
-                    </div>
-                </div>
-                
-                <div class="header-main">
-                    <div class="burger">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <p class="title">Mi Cuenta</p>
-                    <div class="bell">
-                        <span class="icon icon-bell"></span>
-                    </div>
-                </div>
-                
-                <div class="search">
-                    <div class="search-bar">
-                        <input class="search-bar__input" type="text" placeholder="Search something..">
-                        <button class="search-bar__icon" type="button"></button>
-                    </div>
-                    <button class="search-button">+</button>
-                </div>
-            </header> -->
-            
             <main>
                 <div class="cards container">
-                    
+                  
+                    <div class="card-head">
+                        <p class="section-title" >Mis tarjetas</p>
+                    </div>
                     <div class="card-list">
-    <!-- 					<div class="card card-behind"></div>
-                        <div class="card card-active">
-                            <div class="card-verified"></div>
-                            <div class="card-info">
-                                <div>
-                                    <p class="card-info__title">Current balance</p>
-                                    <p class="card-info__balance">7850.89</p>
-                                </div>
-                                <div class="icon icon-visa card-info__logo"></div>
-                            </div>
-                            <div class="card-numbers">
-                                <div class="dots">
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                </div>
-                                <div class="dots">
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                </div>
-                                <div class="dots">
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                </div>
-                                <div>1234</div>
-                            </div>
-                            <div class="card-date">
-                                <p>Nugget Card</p>
-                                <p>28/07</p>
-                            </div>
-                        </div>
-                        <div class="card"></div> -->
+   				
                     </div>
                     
                     <div class="card-slider">
-    <!-- 					<span class="card-slider__item"></span>
-                        <span class="card-slider__item card-slider__item-active"></span>
-                        <span class="card-slider__item"></span> -->
+				
                     </div>
                 </div>
                 
@@ -103,15 +21,15 @@
                     <p class="section-title">Opciones</p>
                     <div class="contacts-list">
                         <div class="contact contact-add">
-                            <div class="icon icon-contact-add"></div>
-                            <div class="contact-name">Mis<br> Compras</div>
+                            <div class="icon icon-calendar"></div>
+                            <div class="contact-name">Mis pedidos</div>
                         </div>
                         <a routerLink="/perfil" class="contact">
                         <div class="">
                             <div class="contact-avatar">
                                 <img src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png" alt="">
                             </div>
-                            <div class="contact-name">Mi<br> Perfil</div>
+                            <div class="contact-name">Mi Perfil</div>
                         </div>
                         </a>
 
@@ -121,7 +39,7 @@
                             <div class="contact-avatar">
                                 <img src="https://i.pinimg.com/736x/dc/36/45/dc3645b35f114f6bb2468db388229e8a.jpg" alt="">
                             </div>
-                            <div class="contact-name">Administrar<br>Tarjetas</div>
+                            <div class="contact-name" >Administrar Tarjetas</div>
                         </div>
                         </a>
                        
@@ -129,7 +47,7 @@
                 </div>
                 <div class="transactions">
                     <div class="transactions-head">
-                        <p class="section-title">Mis Pedidos</p>
+                        <p class="section-title" style="padding-left: 20px;">Mis Pedidos</p>
                     </div>
                     
                     <ul class="transactions-list">
@@ -140,8 +58,9 @@
                             <div class="transaction-info">
                                 <p class="transaction-title">Pedido 1</p>
                                 <p class="transaction-desc">Garrafon de Agua 20L</p>
+                                <p class="transaction-desc">No Entregado</p>
                             </div>
-                            <span class="transaction-sum"> No Entregado: $15 <a routerLink="/status" class="btn"> Estatus</a> </span>
+                            <span class="transaction-sum">$15 <a routerLink="/status" class="btn"><img src="../../assets/images/status.svg" alt=""></a> </span>
                            
                         </li>
                         <li class="transaction">
@@ -151,9 +70,10 @@
                             <div class="transaction-info">
                                 <p class="transaction-title">Pedido 2</p>
                                 <p class="transaction-desc">Botella de Agua de 1L</p>
+                                <p class="transaction-desc">Entregado</p>
                             </div>
                             
-                            <span class="transaction-sum">Entregado: $13.5 <a class="btn" >Estatus</a> </span>
+                            <span class="transaction-sum">$13.5 <a class="btn" ><img src="../../assets/images/check_status.svg" alt=""></a> </span>
 
                         </li>
                         <li class="transaction">
@@ -163,8 +83,9 @@
                             <div class="transaction-info">
                                 <p class="transaction-title">Pedido 3</p>
                                 <p class="transaction-desc">Garrafon de Agua 20L</p>
+                                <p class="transaction-desc">Entregado</p>
                             </div>
-                            <span class="transaction-sum">Entregado: $80 <a class="btn" >Estatus</a> </span>
+                            <span class="transaction-sum">$80 <a class="btn" ><img src="../../assets/images/check_status.svg" alt=""></a> </span>
                         </li>
                     </ul>
                 </div>

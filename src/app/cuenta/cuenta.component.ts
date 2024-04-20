@@ -10,11 +10,14 @@ import { RouterModule } from '@angular/router';
   templateUrl: './cuenta.component.html',
   styleUrl: './cuenta.component.css'
 })
-export class CuentaComponent{
+export class CuentaComponent implements OnInit{
 
   constructor( private _CargarScripts: CargarScriptsService){
 
-    _CargarScripts.Carga(["cuenta"]);
+    
+  }
+  ngOnInit(): void {
+    this._CargarScripts.Carga(["cuenta"]);
   }
 }
 
