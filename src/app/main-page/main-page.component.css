@@ -246,7 +246,7 @@ a {
         -ms-grid-row: 1;
         -ms-grid-row-span: 27;
         grid-row: 1 / span 27; 
-        width: 380px;
+        width: 420px;
       }
       .why-choose-section .imgs-grid .grid.grid-2 {
         -ms-grid-column: 19;
@@ -256,7 +256,7 @@ a {
         -ms-grid-row-span: 5;
         grid-row: 1 / span 5;
         padding-left: 20px; 
-        width: 200px;
+        width: 250px;
       }
       .why-choose-section .imgs-grid .grid.grid-3 {
         -ms-grid-column: 14;
@@ -334,7 +334,7 @@ a {
     position: relative; }
 
     .process-wrapper {
-      padding: 80px 0;
+      padding: 80px 0 20px 0 ;
     }
     .number-circle {
       display: inline-block;
